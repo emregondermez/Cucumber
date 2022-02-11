@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.AmazonPages;
+import pages.HMCPage;
 import utulities.ConfigReader;
 import utulities.Driver;
 
@@ -81,4 +82,30 @@ public class AmazonStepDefinitions {
     public void kullaniciSayfasinaGider(String url) {
         Driver.getDriver().get(ConfigReader.getProperty(url));
     }
+
+
+    HMCPage hmcPage;
+    @Given("login linkine tiklar")
+    public void login_linkine_tiklar() {
+        hmcPage = new HMCPage();
+        hmcPage.mainPageLoginLinki.click();
+    }
+    @Then("kullanici adi olarak {string} girer")
+    public void kullanici_adi_olarak_girer(String string) {
+        hmcPage = new HMCPage();
+        hmcPage.usernameTextBox.sendKeys("");
+    }
+    @Then("password olarak {string} girer")
+    public void password_olarak_girer(String string) {
+
+    }
+    @Then("Login butonuna basar")
+    public void login_butonuna_basar() {
+
+    }
+    @Then("basarili olarak giris yapildigini test eder")
+    public void basarili_olarak_giris_yapildigini_test_eder() {
+
+    }
+
 }
