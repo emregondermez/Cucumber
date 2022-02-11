@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -59,5 +60,25 @@ public class AmazonStepDefinitions {
         String expectedResult = "flower";
         Assert.assertTrue(actualResult.contains(expectedResult));
     }
+    @Given("{string} icin arama yapar")
+    public void icin_arama_yapar(String arananKelime) {
+        amazonPages = new AmazonPages();
+        amazonPages.amazonSearchBox.sendKeys(arananKelime, Keys.ENTER);
+    }
+    @Then("sonuclarin {string} icerdigini test eder")
+    public void sonuclarin_icerdigini_test_eder(String aranaKelime) {
+        amazonPages = new AmazonPages();
+        String actualResult = amazonPages.amazonSearchResult.getText();
+        Assert.assertTrue(actualResult.contains(aranaKelime));
+    }
 
+    @And("sayfayi kapatir")
+    public void sayfayiKapatir() {
+        Driver.closeDriver();
+    }
+
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String url) {
+        Driver.getDriver().get(ConfigReader.getProperty(url));
+    }
 }
