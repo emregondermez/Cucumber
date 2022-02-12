@@ -7,7 +7,7 @@ import org.junit.Assert;
 import pages.HMCPage;
 import utulities.ConfigReader;
 
-public class HMCStepDefinations {
+public class HMCStepDefinitions {
     HMCPage hmcPage;
     @Given("login linkine tiklar")
     public void login_linkine_tiklar() {
