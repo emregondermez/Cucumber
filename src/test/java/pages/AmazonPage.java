@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utulities.Driver;
 
-public class AmazonPages {
+public class AmazonPage {
 
-    public AmazonPages() {
+    public AmazonPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
