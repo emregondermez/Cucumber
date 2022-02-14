@@ -15,7 +15,7 @@ Feature: US1009_kullanici_data_ekleyebilmeli
   And Create tusuna basar
   When kullanici "<firstname>" isim ile arama yapar
   Then isim bolumunde isminin oldugunu dogrular
-
+  And sayfayi kapatir
 
 Examples:
     |firstname|lastname|position|office|extension|startDate|salary|
