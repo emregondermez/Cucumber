@@ -5,7 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.HMCPage;
-import utulities.ConfigReader;
+import utilities.ConfigReader;
 
 public class HMCStepDefinitions {
     HMCPage hmcPage;

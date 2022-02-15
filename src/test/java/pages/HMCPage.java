@@ -1,7 +1,7 @@
 package pages;
 
 import org.openqa.selenium.support.PageFactory;
-import utulities.Driver;
+import utilities.Driver;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
