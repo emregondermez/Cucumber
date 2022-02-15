@@ -20,5 +20,3 @@ Feature: US1011 Web University Window Handle
 
       |username|password|
       |Mustafa |Donat |
-      |Mustafa |d |
-      |Mustafa |h |
