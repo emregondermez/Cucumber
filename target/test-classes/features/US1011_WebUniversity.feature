@@ -1,6 +1,5 @@
 Feature: US1011 Web University Window Handle
 
-
  @webUniversity
   Scenario Outline: TC16 Reusable Methods ile window Handle Testi
     Given kullanici "WebUniversityUrl" sayfasina gider
@@ -20,3 +19,5 @@ Feature: US1011 Web University Window Handle
 
       |username|password|
       |Mustafa |Donat |
+
+

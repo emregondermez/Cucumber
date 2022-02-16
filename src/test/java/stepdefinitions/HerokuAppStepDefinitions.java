@@ -3,12 +3,10 @@ package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.HerokuAppPage;
-import utilities.ReusableMethods;
+
 
 public class HerokuAppStepDefinitions {
 
-    HerokuAppPage herokuappPage=new HerokuAppPage();
 
     @When("Add Element butonuna basar")
     public void add_element_butonuna_basar() {
