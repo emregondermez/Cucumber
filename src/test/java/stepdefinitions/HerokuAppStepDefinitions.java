@@ -4,8 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.HerokuAppPage;
-import utilities.ReusableMethod;
-
+import utilities.ReusableMethods;
 
 public class HerokuAppStepDefinitions {
 
@@ -18,7 +17,7 @@ public class HerokuAppStepDefinitions {
     @Then("Delete butonu gorununceye kadar bekler")
     public void delete_butonu_gorununceye_kadar_bekler() {
 
-        ReusableMethod.waitForVisibility(herokuappPage.deleteButonElement,20);
+        ReusableMethods.waitForVisibility(herokuappPage.deleteButonElement,20);
 
     }
     @Then("Delete butonunun gorundgunu test eder")
