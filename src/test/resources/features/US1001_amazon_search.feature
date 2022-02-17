@@ -3,7 +3,7 @@ Feature: US1001_amazon_search.feature
   Background: Amazon Ana Sayfa
     Given kullanici amazon sayfasina gider
 
-    @wip
+    @wip @paralel1
   Scenario: TC01_Amazon iPhone Search Test
 
     And iPhone icin arama yapar

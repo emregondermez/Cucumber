@@ -55,7 +55,7 @@ public class WebUniversityStepDefinitions {
     @Then("Ok diyerek Popup'i kapatir")
     public void ok_diyerek_popup_i_kapatir() {
         Driver.getDriver().switchTo().alert().accept();
-        System.out.println("a######3");
+
     }
     @Then("Ilk sayfaya geri doner")
     public void ilk_sayfaya_geri_doner() {

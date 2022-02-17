@@ -1,5 +1,7 @@
 Feature: US1004 parametre ile istenen sayfaya gitme
 
+
+  @paralel2
   Scenario: TC06 Eski usul amazona gitme
 
     Given kullanici amazon sayfasina gider

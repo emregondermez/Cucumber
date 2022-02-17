@@ -1,6 +1,6 @@
 Feature: US1005 Positive login testi
 
-  @hotel
+  @hotel @paralel2
   Scenario: TC08 Positive login
 
     Given kullanici "HMCUrl" sayfasina gider
