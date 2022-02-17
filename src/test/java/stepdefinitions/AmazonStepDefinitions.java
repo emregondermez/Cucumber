@@ -6,12 +6,14 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.AmazonPage;
+import pages.HerokuAppPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 
 public class AmazonStepDefinitions {
 
+    HerokuAppPage herokuAppPage = new HerokuAppPage();
     AmazonPage amazonPages;
     @Given("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {

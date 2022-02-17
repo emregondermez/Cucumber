@@ -3,11 +3,13 @@ package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import pages.HerokuAppPage;
+import utilities.ReusableMethod;
 
 
 public class HerokuAppStepDefinitions {
 
-
+    HerokuAppPage herokuappPage = new HerokuAppPage();
     @When("Add Element butonuna basar")
     public void add_element_butonuna_basar() {
         herokuappPage.addButonElement.click();
@@ -16,7 +18,7 @@ public class HerokuAppStepDefinitions {
     @Then("Delete butonu gorununceye kadar bekler")
     public void delete_butonu_gorununceye_kadar_bekler() {
 
-        ReusableMethods.waitForVisibility(herokuappPage.deleteButonElement,20);
+        ReusableMethod.waitForVisibility(herokuappPage.deleteButonElement,20);
 
     }
     @Then("Delete butonunun gorundgunu test eder")
