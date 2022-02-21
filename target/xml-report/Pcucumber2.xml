@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="99.791">
+    <testcase classname="US1001_amazon_search.feature" name="TC01_Amazon iPhone Search Test" time="52.266">
+        <system-out>
+            <![CDATA[Given kullanici amazon sayfasina gider......................................passed
+And iPhone icin arama yapar.................................................passed
+Then sonuclarin iPhone icerdigini test eder.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1003 parametre ile step definitions olusturma" name="T05_Parametre kullanimi" time="26.963">
+        <system-out>
+            <![CDATA[Given kullanici amazon sayfasina gider......................................passed
+And "iPhone" icin arama yapar...............................................passed
+Then sonuclarin "iPhone" icerdigini test eder...............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1006 negative login test" name="TC10 dogru username,yanlis sifre ile giris yapilamaz" time="20.008">
+        <system-out>
+            <![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
+Then login linkine tiklar...................................................passed
+And kullanici adi olarak "HMCValidUsername" girer...........................passed
+And password olarak "HMCWrongPassword" girer................................passed
+Then login butonuna basar...................................................passed
+And giris yapilamdigini gorur...............................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

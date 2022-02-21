@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/Pcucumber2.xml"},
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@paralel1",
+        tags = "@paralel2",
         dryRun = false
 )
 public class ParalelTestRunner2 {
