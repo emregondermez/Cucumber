@@ -4,6 +4,7 @@ stepdefinitions\AmazonStepDefinitions.class
 pages\EditorPage.class
 utilities\ReusableMethods.class
 pages\HerokuAppPage.class
+runners\ParalelTestRunner3.class
 pages\AmazonPage.class
 stepdefinitions\Hooks.class
 runners\ParalelTestRunner1.class

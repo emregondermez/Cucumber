@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="98.042">
-    <testcase classname="US1001_amazon_search.feature" name="TC01_Amazon iPhone Search Test" time="56.298">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="137.185">
+    <testcase classname="US1001_amazon_search.feature" name="TC01_Amazon iPhone Search Test" time="71.231">
         <system-out>
             <![CDATA[Given kullanici amazon sayfasina gider......................................passed
 And iPhone icin arama yapar.................................................passed
@@ -8,7 +8,7 @@ Then sonuclarin iPhone icerdigini test eder.................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1003 parametre ile step definitions olusturma" name="T05_Parametre kullanimi" time="23.008">
+    <testcase classname="US1003 parametre ile step definitions olusturma" name="T05_Parametre kullanimi" time="45.39">
         <system-out>
             <![CDATA[Given kullanici amazon sayfasina gider......................................passed
 And "iPhone" icin arama yapar...............................................passed
@@ -17,7 +17,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 negative login test" name="TC10 dogru username,yanlis sifre ile giris yapilamaz" time="18.156">
+    <testcase classname="US1006 negative login test" name="TC10 dogru username,yanlis sifre ile giris yapilamaz" time="19.367">
         <system-out>
             <![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
 Then login linkine tiklar...................................................passed
