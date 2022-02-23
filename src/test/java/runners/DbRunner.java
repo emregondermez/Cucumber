@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/Pcucumber1.json",
                 "junit:target/xml-report/Pcucumber1.xml"},
         features ="src/test/resources/features",
-        glue = "dbStepDefinitions",
+        glue = "stepdefinitions",
         tags = "@db",
         dryRun = false
 )

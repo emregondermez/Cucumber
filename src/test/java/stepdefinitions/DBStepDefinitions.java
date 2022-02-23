@@ -1,4 +1,4 @@
-package dbStepDefinitions;
+package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StepDefinitions {
+public class DBStepDefinitions {
 
     String url="jdbc:sqlserver://184.168.194.58:1433;databaseName=hotelmycamp ; user=techproed;password=P2s@rt65";
     String username="techproed";
