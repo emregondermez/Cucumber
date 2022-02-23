@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="108.783">
+    <testcase classname="US1005 Positive login testi" name="TC08 Positive login" time="107.754">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
+And login linkine tiklar....................................................passed
+Then kullanici adi olarak "HMCValidUsername" girer..........................passed
+And password olarak "HMCValidPassword" girer................................passed
+And Login butonuna basar....................................................undefined
+Then basarili olarak giris yapildigini test eder............................skipped
+And sayfayi kapatir.........................................................skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>
