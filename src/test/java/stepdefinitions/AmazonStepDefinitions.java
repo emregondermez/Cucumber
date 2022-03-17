@@ -70,8 +70,8 @@ public class AmazonStepDefinitions {
     @Then("sonuclarin {string} icerdigini test eder")
     public void sonuclarin_icerdigini_test_eder(String aranaKelime) {
         amazonPages = new AmazonPage();
-       // String actualResult = amazonPages.amazonSearchResult.getText();
-     //   Assert.assertTrue(actualResult.contains(aranaKelime));
+        String actualResult = amazonPages.amazonSearchResult.getText();
+       Assert.assertTrue(actualResult.contains(aranaKelime));
     }
 
     @And("sayfayi kapatir")
