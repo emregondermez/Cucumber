@@ -67,22 +67,22 @@ public class AmazonStepDefinitions {
         amazonPages = new AmazonPage();
         amazonPages.amazonSearchBox.sendKeys(arananKelime, Keys.ENTER);
     }
-    @Then("sonuclarin {string} icerdigini test eder")
-    public void sonuclarin_icerdigini_test_eder(String aranaKelime) {
-        amazonPages = new AmazonPage();
-        String actualResult = amazonPages.amazonSearchResult.getText();
-       Assert.assertTrue(actualResult.contains(aranaKelime));
-    }
-
-    @And("sayfayi kapatir")
-    public void sayfayiKapatir() {
-        Driver.closeDriver();
-    }
-
-    @Given("kullanici {string} sayfasina gider")
-    public void kullaniciSayfasinaGider(String url) {
-        Driver.getDriver().get(ConfigReader.getProperty(url));
-    }
+//    @Then("sonuclarin {string} icerdigini test eder")
+//    public void sonuclarin_icerdigini_test_eder(String aranaKelime) {
+//        amazonPages = new AmazonPage();
+//        String actualResult = amazonPages.amazonSearchResult.getText();
+//       Assert.assertTrue(actualResult.contains(aranaKelime));
+//    }
+//
+//    @And("sayfayi kapatir")
+//    public void sayfayiKapatir() {
+//        Driver.closeDriver();
+//    }
+//
+//    @Given("kullanici {string} sayfasina gider")
+//    public void kullaniciSayfasinaGider(String url) {
+//        Driver.getDriver().get(ConfigReader.getProperty(url));
+//    }
 
 
 
