@@ -74,10 +74,10 @@ public class AmazonStepDefinitions {
        Assert.assertTrue(actualResult.contains(aranaKelime));
     }
 
-    @And("sayfayi kapatir")
-    public void sayfayiKapatir() {
-        Driver.closeDriver();
-    }
+//    @And("sayfayi kapatir")
+//    public void sayfayiKapatir() {
+//        Driver.closeDriver();
+//    }
 
     @Given("kullanici {string} sayfasina gider")
     public void kullaniciSayfasinaGider(String url) {
